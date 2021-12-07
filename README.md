@@ -15,7 +15,7 @@
 	- 45个cine-MR图像包括的病人及其病理特性：
 		- **健康(N,healthy,n=12)**
 		- **肥大(HPY,hypertrophy,n=12)**
-		- **心力衰竭与梗死(HF-I, heart failure with infarction,n=12) **
+		- **心力衰竭与梗死(HF-I, heart failure with infarction,n=12)**
 		- **心力衰竭没有梗死(HF-NI, heart failure without infarction, n=12)**
 	- 所有的图像都是在**10-15秒的屏气**过程中获得的，时间分辨率为**20 phase**。从**二尖瓣到心尖**共获得**6-12张**SAX图像(**厚度是8mm**，**间隙是8 mm**,**FOV=320 mm x 320 mm**)，每个图像切片由**256×256个像素**组成。
 	- 在这些SAX MR采集中，按照包括**乳头状肌**和**心室小梁**在内的惯例，由经验丰富的心脏病专家在**收缩末期**和**舒张末期**的所有切片上绘制**心内膜**和**心外膜轮廓**。
