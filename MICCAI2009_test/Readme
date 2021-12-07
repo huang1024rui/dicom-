@@ -1,0 +1,37 @@
+# Sunnybrook Cardiac Data
+The Sunnybrook Cardiac Data (SCD), also known as the 2009 Cardiac MR Left Ventricle Segmentation Challenge data, consist of 45 cine-MRI images from a mixed of patients and pathologies: healthy, hypertrophy, heart failure with infarction and heart failure without infarction. Subset of this data set was first used in the automated myocardium segmentation challenge from short-axis MRI, held by a MICCAI workshop in 2009. The whole complete data set is now available in the CAP database with public domain license.
+
+# Classification
+There are four pathological groups in this data set, which were classified based on (K Alfakih et al., JMRI 2003) paper, i.e.:
+
+Heart failure with infarction (HF-I) group had ejection fraction (EF) < 40% and evidence of late gadolinium (Gd) enhancement.
+Heart failure without infarction (HF) group had EF < 40% and no late Gd enhancement.
+LV hypertrophy (HYP) group had normal EF (> 55%) and a ratio of left ventricular (LV) mass over body surface area is > 83 g/m2.
+Healthy (N) group had EF > 55% and no hypertrophy.
+The following table shows group statistics written as average (stddev) :
+
+ 	                               N (n=9)	        HYP (n=12)	        HF (n=12)	              HF-I (n=12)
+End Diastolic Volume (ml)	    115.69 (36.89)	  114.39 (50.46)	    233.67 (63.21)	         244.92 (86.02)
+End Systolic Volume (ml)	      43.10 (14.74)	   43.11 (24.50)	    158.28 (56.34)	         174.34 (90.64)
+Ejection Fraction (%)	         62.93 (3.65)	     62.72 (9.22)	       33.09 (13.07)	          32.01 (12.27)
+Left Ventricular Mass (g)	     130.27 (32.69)	   175.87 (85.70)	    193.69 (39.01)	          201.32 (45.24)
+# Availability
+The Cardiac Atlas Project provides the dissemination of the Sunnybrook data by hosting them in the CAP databases. Finite element models (see supporting files section below) derived from these data are also provided. The whole complete data are available for any users, including the guest user account.
+
+License and attribution of these data set, including its derivatives, follows the Public Domain (CC0 1.0 Universal). If you are using this data in a publication, please cite the following reference:
+
+Radau P, Lu Y, Connelly K, Paul G, Dick AJ, Wright GA. “Evaluation Framework for Algorithms Segmenting Short Axis Cardiac MRI.” The MIDAS Journal – Cardiac MR Left Ventricle Segmentation Challenge, http://hdl.handle.net/10380/3070
+Note that we ran our CAP de-identification process to rename patient IDs according to CAP format. To map between CAP IDs and the original Sunnybrook’s IDs that were used during the 2009 MICCAI challenge, you must the mapping file SCD_PatientData below.
+
+In the database: the Sunnybrook Cardiac Data cases are identified by a prefix SCD
+# Direct file links
+## SCD_PatientData
+A Microsoft Excel spreadsheet file containing a mapping between CAP IDs with the original PatientIDs, age, gender and pathology list.
+## SCD_CAPModels.zip (2.4 MB)
+Left ventricular finite element models.
+## SCD_ManualContours.zip (1.4MB)
+Expert-drawn contours provided by the Data Contributor, which was distributed as part of the 2009 LV Segmentation Challenge. All names are still in the original IDs.
+## SCD_DeidentifiedImages.zip (2.6 GB)
+All the DICOM images.
+# Data contributor
+Perry Radau – Sunnybrook Health Sciences Centre, Toronto, Canada.
