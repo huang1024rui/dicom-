@@ -44,5 +44,11 @@ segmentation exists at index z,t, manual_segs_32points{z,t}==-99999.
 sol_yxzt(y,x,z,t) contains the pixel at row y, column x, taken from frame t and from
 slice number z along the long axis.
 
-
+# 读取tensor图片
+第一步：
+文件格式是tensor
+a = rescaled_vol4D_tensor[6,0,:,:,10].cpu().squeeze()
+第二步：
+plt.imshow(a)
+plt.show()
 
