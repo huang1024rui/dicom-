@@ -48,10 +48,12 @@ slice number z along the long axis.
 第一步：
 
 文件格式是tensor
+
 a = rescaled_vol4D_tensor[6,0,:,:,10].cpu().squeeze()
 
 第二步：
 
 plt.imshow(a)
+
 plt.show()
 
