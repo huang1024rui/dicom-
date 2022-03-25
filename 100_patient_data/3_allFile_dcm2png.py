@@ -22,7 +22,7 @@ def main():
         # read the image
         img = sitk.ReadImage(i)
         # rescale intensity range from [-1000,1000] to [0,255]
-        img = sitk.IntensityWindowing(img, 0, 4000, 0, 255)
+        img = sitk.IntensityWindowing(img, 0, 2800, 0, 255) # 2800是最优，刚开始是5000
         # convert 16-bit pixels to 8-bit
         img = sitk.Cast(img, sitk.sitkUInt8)
         # file_path
